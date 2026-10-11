@@ -1,6 +1,6 @@
 ---
 name: motion-from-reference
-description: Build a new motion-graphics video in Remotion in the style of a reference video. Use when the user puts a video in reference/ and asks for a new video, animation, explainer or motion graphics in its style («اصنع فيديو بنفس الستايل»). Covers studying the reference, one round of questions, script and voice timing, building scenes, review in Remotion Studio, and rendering only after the user approves.
+description: Build a new motion-graphics video in Remotion in the style of a reference video. Use when the user names a style from the styles/ library (e.g. "plotter") or puts a video in reference/, and asks for a new video, animation, explainer or motion graphics in that style («اصنع فيديو بنفس الستايل»). Covers studying the reference, one round of questions, script and voice timing, building scenes, review in Remotion Studio, and rendering only after the user approves.
 ---
 
 <div dir="rtl">
@@ -22,16 +22,20 @@ description: Build a new motion-graphics video in Remotion in the style of a ref
 3. ثبّت المشروع: `cd video && npm install`.
 
 ## المرحلة 1: افهم المرجع
-1. حلّل كل فيديو في `reference/`:
+1. **حدّد المرجع:**
+   - إن ذكر المستخدم اسم ستايل، فالمرجع `styles/<الاسم>/reference.mp4`. قائمة الستايلات في `styles/README.md`.
+   - وإلا، فالمرجع كل فيديو في `reference/`.
+   - إن لم يذكر ستايلًا وكان `reference/` فارغًا: اعرض عليه الستايلات الموجودة في `styles/README.md`، واسأله هل يختار واحدًا منها أم يضع فيديو خاصًا به. هذا هو السؤال الوحيد المسموح قبل التحليل.
+2. حلّل المرجع:
    ```
-   uv run --no-project --with numpy --with pillow python $S/analyze.py reference/<الملف>
+   uv run --no-project --with numpy --with pillow python $S/analyze.py <مسار الفيديو> --out analysis/<اسم الستايل أو الفيديو>
    ```
-2. اقرأ `analysis/<الاسم>/report.md`.
-3. **انظر** إلى كل صورة في `sheets/` و`motion/`، وإلى `palette.png`.
+3. اقرأ `analysis/<الاسم>/report.md`.
+4. **انظر** إلى كل صورة في `sheets/` و`motion/`، وإلى `palette.png`.
    - صور `motion/` هي الأهم: كل صورة 8 إطارات بينها 0.1 ثانية.
    - منها تعرف كيف تدخل العناصر وتخرج، وكم تستغرق الحركة، وهل هي ناعمة أم حادة.
-4. إن كان نموذجك يستطيع مشاهدة الفيديو أو سماع الصوت مباشرة، فافعل ذلك أيضًا.
-5. اكتب `STYLE.md` في جذر المشروع بالقالب الموجود في [references/style-bible.md](references/style-bible.md).
+5. إن كان نموذجك يستطيع مشاهدة الفيديو أو سماع الصوت مباشرة، فافعل ذلك أيضًا.
+6. اكتب `STYLE.md` في جذر المشروع بالقالب الموجود في [references/style-bible.md](references/style-bible.md).
    - كن محددًا بالأرقام: أكواد الألوان، والأحجام بالبكسل، والمدد بالثواني، وأسماء منحنيات الحركة.
    - «حركة ناعمة» لا تكفي. المطلوب مثل: «تصعد الكلمة 40px خلال 0.45 ثانية بـ easeOutCubic».
 
