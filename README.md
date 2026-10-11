@@ -2,6 +2,10 @@
 
 # Motion Starter Kit: فيديو موشن جرافيك من فيديو مرجعي
 
+[![شاهد الفيديو على يوتيوب](styles/plotter/thumbnail.png)](https://youtu.be/yreYVMWULLc)
+
+▶️ **[شاهد الفيديو على يوتيوب](https://youtu.be/yreYVMWULLc)**: هذا الفيديو كله صُنع بـ Remotion بالكلام مع Claude Code، وهو ستايل `plotter` في المكتبة.
+
 اختر ستايلًا من [مكتبة الستايلات](styles/README.md)، أو ضع أي فيديو موشن جرافيك يعجبك في `reference/`. ثم افتح المشروع في وكيل برمجة (Claude Code أو Codex أو Antigravity)، والصق [البرومبت](PROMPT.md).
 
 بعدها يتولّى الوكيل الباقي:
