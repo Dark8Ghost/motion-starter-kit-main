@@ -1,47 +1,66 @@
 <div dir="rtl">
 
-# Motion Starter Kit: فيديو موشن جرافيك من فيديو مرجعي
+# Motion Starter Kit: فيديو موشن جرافيك بالكلام مع الذكاء الاصطناعي
 
 [![شاهد الفيديو على يوتيوب](styles/plotter/thumbnail.png)](https://youtu.be/yreYVMWULLc)
 
 ▶️ **[شاهد الفيديو على يوتيوب](https://youtu.be/yreYVMWULLc)**: هذا الفيديو كله صُنع بـ Remotion بالكلام مع Claude Code، وهو ستايل `plotter` في المكتبة.
 
-اختر ستايلًا من [مكتبة الستايلات](styles/README.md)، أو ضع أي فيديو موشن جرافيك يعجبك في `reference/`. ثم افتح المشروع في وكيل برمجة (Claude Code أو Codex أو Antigravity)، والصق [البرومبت](PROMPT.md).
+> **🤖 إلى الوكيل (AI agent):** إن أعطاك المستخدم رابط هذا الريبو وطلب فيديو:
+> 1. انسخ الريبو وادخل إليه: `git clone https://github.com/motalim-ai/motion-starter-kit.git`. إن كان المجلد الحالي فارغًا، أضف ` .` في آخر الأمر.
+> 2. اقرأ `AGENTS.md` والتزم به، ثم اتبع `.agents/skills/motion-from-reference/SKILL.md` مرحلة بمرحلة.
+> 3. افهم الستايل أولًا، ثم اسأل المستخدم كل أسئلتك مرة واحدة بكلام بسيط. لا تبنِ قبل إجاباته، ولا ترندر قبل أن يشاهد الفيديو في Remotion Studio ويوافق.
+>
+> **For AI agents:** if the user gave you this repo's link and asked for a video: clone it, read `AGENTS.md`, and follow `.agents/skills/motion-from-reference/SKILL.md` step by step. Ask all your questions once, in simple words. Never render before the user has watched the video in Remotion Studio and approved it.
+
+## الاستخدام: رابط وجملة واحدة
+1. انسخ رابط الريبو: `https://github.com/motalim-ai/motion-starter-kit`
+2. افتح أي وكيل برمجة (Claude Code أو Codex أو Antigravity) في مجلد فارغ.
+3. أعطه الرابط، وقل له ماذا تريد. مثلًا:
+```
+https://github.com/motalim-ai/motion-starter-kit
+أريد فيديو مدته 30 ثانية عن فوائد شرب الماء، بستايل plotter الموجود في الريبو.
+```
 
 بعدها يتولّى الوكيل الباقي:
-1. يحلّل فيديو الستايل بنفسه، ويكتب دليل أسلوبه في `STYLE.md`.
-2. يسألك كل أسئلته مرة واحدة: الموضوع، والمدة، واللغة، وتعليق صوتي أم مؤثرات فقط.
-3. يكتب السكريبت وخطة المشاهد.
-4. يبني الفيديو بـ **Remotion**، مشهدًا بعد مشهد، وكل حركة مربوطة بتوقيت كلماتها.
-5. يفتح لك **Remotion Studio** لتشاهد الفيديو.
-6. **لا يرندر** حتى تقول «رندر».
+1. ينسخ الريبو، ويجهّز الأدوات (ويستأذنك إن احتاج أن يثبّت شيئًا).
+2. يحلّل فيديو الستايل بنفسه، ويكتب دليل أسلوبه في `STYLE.md`.
+3. **يسألك** ما ينقصه، مرة واحدة: الموضوع، والمدة، واللغة، وهل تريد تعليقًا صوتيًا، أو موسيقى، أو مؤثرات صوتية.
+4. يكتب السكريبت وخطة المشاهد.
+5. يبني الفيديو بـ **Remotion**، مشهدًا بعد مشهد.
+6. يفتح لك **Remotion Studio** لتشاهده، وتطلب أي تعديل بكلامك العادي.
+7. **لا يرندر** حتى تقول «رندر».
 
-القواعد واحدة لكل الوكلاء، لذلك يمكنك إعطاء نفس المشروع لأكثر من وكيل، ومقارنة ما يصنعه كل واحد.
+القواعد واحدة لكل الوكلاء. لذلك يمكنك إعطاء نفس الرابط ونفس الطلب لأكثر من وكيل، ومقارنة ما يصنعه كل واحد.
 
 ## الستايلات
 | الاسم | المعاينة |
 |---|---|
 | `plotter` | <img src="styles/plotter/preview.jpg" width="480"> |
 
-التفاصيل وطريقة إضافة ستايل جديد في [styles/README.md](styles/README.md).
+التفاصيل، وطريقة إضافة ستايل جديد، في [styles/README.md](styles/README.md).
+
+**عندك فيديو يعجبك؟** ضعه في `reference/` بدل اختيار ستايل، وسيصنع الوكيل فيديو بنفس أسلوبه.
 
 ## المتطلبات
-| الأداة | لماذا | التثبيت |
-|---|---|---|
-| Node.js 18+ | Remotion | [nodejs.org](https://nodejs.org) |
-| ffmpeg | تحليل الفيديو والصوت | macOS: `brew install ffmpeg`، Windows: `winget install ffmpeg` |
-| uv | تشغيل سكريبتات Python دون إعداد | [docs.astral.sh/uv](https://docs.astral.sh/uv/getting-started/installation/) |
+يتحقق منها الوكيل بنفسه في البداية، ويعرض أن يثبّت الناقص منها:
 
-أول مرة تستخرج فيها توقيت تعليق صوتي، يُحمَّل PyTorch وموديل المحاذاة، ومجموعهما نحو 2 جيجا. وبعدها تعمل الأداة دون إنترنت.
-
-## الاستخدام
-| الوكيل | كيف تفتح المشروع |
+| الأداة | لماذا |
 |---|---|
-| **Claude Code** | افتح هذا المجلد في Claude Code (التطبيق أو الطرفية). يقرأ `CLAUDE.md` والسكيل من `.claude/skills/` |
-| **Codex** | شغّل Codex في هذا المجلد. يقرأ `AGENTS.md` والسكيل من `.agents/skills/` |
-| **Antigravity** | افتح المجلد كـ workspace. يقرأ `AGENTS.md` و`GEMINI.md` والسكيل من `.agents/skills/` |
+| Node.js 18+ | Remotion |
+| ffmpeg | تحليل الفيديو والصوت |
+| uv | تشغيل سكريبتات Python دون إعداد |
 
-ثم الصق البرومبت من [PROMPT.md](PROMPT.md).
+إن اخترت تعليقًا صوتيًا، فأول مرة يُستخرج فيها توقيت الكلمات يُحمَّل PyTorch وموديل المحاذاة، ومجموعهما نحو 2 جيجا. وبعدها تعمل الأداة دون إنترنت.
+
+## لكل وكيل
+| الوكيل | ماذا يقرأ |
+|---|---|
+| **Claude Code** | `CLAUDE.md`، والسكيل من `.claude/skills/` |
+| **Codex** | `AGENTS.md`، والسكيل من `.agents/skills/` |
+| **Antigravity** | `AGENTS.md` و`GEMINI.md`، والسكيل من `.agents/skills/` |
+
+وإن فتحت المشروع بعد نسخه، فيكفي أن تقول: «أريد فيديو عن ... بستايل plotter». وللمزيد من الأمثلة: [PROMPT.md](PROMPT.md).
 
 ## خريطة المشروع
 ```
@@ -50,16 +69,16 @@ reference/          أو ضع هنا فيديو مرجعيًا من عندك
 AGENTS.md           القانون: القواعد لكل الوكلاء
 CLAUDE.md           يستورد AGENTS.md لـ Claude Code
 GEMINI.md           يستورد AGENTS.md لـ Antigravity
-PROMPT.md           البرومبت الذي تلصقه
+PROMPT.md           أمثلة على الطلبات
 .agents/skills/motion-from-reference/
   SKILL.md          الطريقة، مرحلة بمرحلة
   references/       الأسئلة، وقالب دليل الأسلوب، وقواعد Remotion والعربية والصوت والمراجعة
-  scripts/          analyze.py (تحليل المرجع)، وalign.py (توقيت الكلمات)، وsfx.py (مؤثرات صوتية)
+  scripts/          analyze.py (تحليل الستايل)، وalign.py (توقيت الكلمات)، وsfx.py (مؤثرات)، وmusic.py (موسيقى)
 .claude/skills/     نفس السكيل لـ Claude Code
-video/              مشروع Remotion (تبنى فيه المشاهد)
+video/              مشروع Remotion (تُبنى فيه المشاهد)
 ```
 
-ويكتب الوكيل في جذر المشروع: `STYLE.md` و`PLAN.md` و`script.txt`، وفي `analysis/` نتائج تحليل المرجع.
+ويكتب الوكيل في جذر المشروع: `STYLE.md` و`PLAN.md` و`script.txt`، وفي `analysis/` نتائج تحليل الستايل.
 
 ## الأوامر (داخل `video/`)
 | الأمر | ماذا يفعل |

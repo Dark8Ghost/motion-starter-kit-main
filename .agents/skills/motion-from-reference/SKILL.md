@@ -17,9 +17,17 @@ description: Build a new motion-graphics video in Remotion in the style of a ref
 - المراحل بالترتيب، ولا تقفز فوق مرحلة.
 
 ## المرحلة 0: التجهيز
-1. تحقّق من الأدوات: `node -v` (الإصدار 18 أو أحدث)، و`ffmpeg -version`، و`uv --version`.
-2. إن نقصت أداة، أعطِ المستخدم أمر تثبيتها وتوقف.
-3. ثبّت المشروع: `cd video && npm install`.
+1. **إن بدأت من رابط الريبو** ولست داخل المشروع، فانسخه وادخل إليه:
+   - المجلد الحالي فارغ: `git clone https://github.com/motalim-ai/motion-starter-kit.git .`
+   - المجلد فيه ملفات: `git clone https://github.com/motalim-ai/motion-starter-kit.git motion-video`، ثم ادخل `motion-video`.
+2. **تحقّق من الأدوات:** `node -v` (الإصدار 18 أو أحدث)، و`ffmpeg -version`، و`uv --version`.
+3. **إن نقصت أداة:**
+   - اشرح للمستخدم في جملة بسيطة ما هي ولماذا نحتاجها، واعرض أن تثبّتها أنت.
+   - بعد موافقته ثبّتها:
+     - macOS: `brew install node ffmpeg uv`
+     - Windows: `winget install OpenJS.NodeJS.LTS Gyan.FFmpeg astral-sh.uv`
+     - إن لم يكن مدير الحزم موجودًا، فاستخدم المثبّت الرسمي لكل أداة.
+4. **ثبّت المشروع:** `cd video && npm install`.
 
 ## المرحلة 1: افهم المرجع
 1. **حدّد المرجع:**
@@ -52,7 +60,7 @@ description: Build a new motion-graphics video in Remotion in the style of a ref
 
 بعدها تابع مباشرة، إلا في حالة واحدة: إن اختار المستخدم تعليقًا صوتيًا ولم يعطك ملفه.
 - اكتب `voice-script.md` كما في [references/audio.md](references/audio.md).
-- اطلب منه وضع الملف في `video/public/voice.mp3`.
+- اشرح له بخطوات قصيرة وبسيطة كيف يحوّله إلى صوت (مثلًا في ElevenLabs)، وأين يضع الملف: `video/public/voice.mp3`.
 - توقف حتى يضعه.
 
 ## المرحلة 4: التوقيت والصوت
@@ -69,6 +77,11 @@ description: Build a new motion-graphics video in Remotion in the style of a ref
   uv run --no-project --with numpy python $S/sfx.py
   ```
   هذا يكتب `video/public/sfx/`. ويمكنك أيضًا استخدام `@remotion/sfx`.
+- **الموسيقى** (إن طلبها المستخدم ولم يعطك ملفًا)، بمدة الفيديو:
+  ```
+  uv run --no-project --with numpy python $S/music.py --duration <ثوانٍ> --mood calm|tech|bright
+  ```
+  هذا يكتب `video/public/music.wav`.
 - النتيجة في `video/src/data/words.json`. راجع الجدول المطبوع: الكلمات منخفضة الثقة تستحق نظرة، لكنها غالبًا مقبولة.
 
 ## المرحلة 5: البناء، مشهدًا بعد مشهد
@@ -89,10 +102,12 @@ description: Build a new motion-graphics video in Remotion in the style of a ref
 ## المرحلة 7: التسليم
 1. شغّل `npm run studio` في الخلفية من داخل `video/`. العنوان عادة http://localhost:3000.
 2. افتح Studio للمستخدم إن كانت لديك أداة متصفح، وإلا فأعطه الرابط.
-3. أخبره باختصار:
+3. أخبره باختصار وبكلام بسيط:
    - ماذا بنيت.
+   - **كيف يشاهد:** زر التشغيل أو المسافة للتشغيل والإيقاف، والشريط في الأسفل للتنقل.
    - عند أي ثوانٍ يتوقف ليراجع.
    - ما الذي لم تكن متأكدًا منه.
+   - إن أراد تغيير شيء، يكفي أن يقوله بكلامه العادي.
 4. **توقف هنا ولا ترندر.**
 
 ## المرحلة 8: التعديلات ثم الرندر
