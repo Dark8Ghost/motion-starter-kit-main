@@ -79,9 +79,9 @@ description: Build a new motion-graphics video in Remotion in the style of a ref
   هذا يكتب `video/public/sfx/`. ويمكنك أيضًا استخدام `@remotion/sfx`.
 - **الموسيقى** (إن طلبها المستخدم ولم يعطك ملفًا)، بمدة الفيديو:
   ```
-  uv run --no-project --with numpy python $S/music.py --duration <ثوانٍ> --mood calm|tech|bright
+  uv run --no-project --with numpy python $S/music.py --mood calm|tech|bright
   ```
-  هذا يكتب `video/public/music.wav`.
+  يأخذ المدة من `words.json` وحده، ويكتب `video/public/music.wav`.
 - النتيجة في `video/src/data/words.json`. راجع الجدول المطبوع: الكلمات منخفضة الثقة تستحق نظرة، لكنها غالبًا مقبولة.
 
 ## المرحلة 5: البناء، مشهدًا بعد مشهد

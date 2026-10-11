@@ -7,12 +7,14 @@ It is a bed, not a song: it sits under a voice or carries a video that has none.
   tech    pad, pulsing bass, arpeggio, soft kick and hats (tech, product, "how it works")
   bright  major key, arpeggio and hats, no kick (upbeat, friendly, promos)
 
-    uv run --no-project --with numpy python .agents/skills/motion-from-reference/scripts/music.py --duration 40 --mood tech
+    uv run --no-project --with numpy python .agents/skills/motion-from-reference/scripts/music.py --mood tech
+
+The length comes from video/src/data/words.json (the video plus a second), or from --duration.
 
 Writes video/public/music.wav (or --out). In Remotion play it with volume 0.12-0.2 under a voice,
 0.35-0.5 when there is no voice.
 """
-import argparse, wave
+import argparse, json, wave
 from pathlib import Path
 
 import numpy as np
@@ -135,11 +137,17 @@ def make(duration: float, bpm: float, mood: str):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--duration", type=float, required=True, help="seconds (the video's length)")
+    ap.add_argument("--duration", type=float, help="seconds (default: the duration in --words, plus 1)")
+    ap.add_argument("--words", default="video/src/data/words.json", help="timings written by align.py")
     ap.add_argument("--mood", choices=["calm", "tech", "bright"], default="calm")
     ap.add_argument("--bpm", type=float, help="tempo (default: calm 80, tech 108, bright 116)")
     ap.add_argument("--out", default="video/public/music.wav")
     a = ap.parse_args()
+    if a.duration is None:
+        try:
+            a.duration = float(json.loads(Path(a.words).read_text(encoding="utf-8"))["duration"]) + 1.0
+        except (OSError, KeyError, ValueError):
+            raise SystemExit(f"no --duration and could not read the duration from {a.words}: run align.py first")
     bpm = a.bpm or {"calm": 80, "tech": 108, "bright": 116}[a.mood]
     st = make(a.duration, bpm, a.mood)
     out = Path(a.out)
