@@ -32,6 +32,12 @@ https://github.com/motalim-ai/motion-starter-kit
 اشرح لي مساحة الدائرة بإثبات بصري، بستايل chalkboard الموجود في الريبو.
 ```
 
+ولنصيحة في قصة كوميدية، بستايل stickman:
+```
+https://github.com/motalim-ai/motion-starter-kit
+أريد فيديو مدته 25 ثانية عن أهمية النوم مبكرًا، في قصة كوميدية بستايل stickman الموجود في الريبو.
+```
+
 ولحكاية بشخصيات كرتونية، بستايل doodle:
 ```
 https://github.com/motalim-ai/motion-starter-kit
