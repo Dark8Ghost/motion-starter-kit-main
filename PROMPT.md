@@ -13,11 +13,21 @@ https://github.com/motalim-ai/motion-starter-kit
 أمثلة أخرى:
 ```
 https://github.com/motalim-ai/motion-starter-kit
-اعمل لي فيديو قصير يعرّف بمتجري الإلكتروني، استخدم الستايل الموجود في الريبو.
+اعمل لي فيديو قصير يعرّف بمتجري الإلكتروني، بستايل plotter.
 ```
 ```
 https://github.com/motalim-ai/motion-starter-kit
 أريد إعلانًا مدته 20 ثانية لتطبيقي، بستايل plotter، وبشكل طولي للريلز.
+```
+
+ولحكاية بشخصيات كرتونية، بستايل doodle:
+```
+https://github.com/motalim-ai/motion-starter-kit
+أريد ريل مدته دقيقة يحكي قصة قصيرة عن الأمانة، بستايل doodle الموجود في الريبو.
+```
+```
+https://github.com/motalim-ai/motion-starter-kit
+اعمل لي حكاية للأطفال عن الرفق بالحيوان، بستايل doodle، وعندي ملف التعليق الصوتي.
 ```
 
 ## بفيديو من عندك
