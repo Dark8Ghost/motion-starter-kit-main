@@ -20,6 +20,12 @@ https://github.com/motalim-ai/motion-starter-kit
 أريد إعلانًا مدته 20 ثانية لتطبيقي، بستايل plotter، وبشكل طولي للريلز.
 ```
 
+ولدرس يُرسم خطوة بخطوة، بستايل whiteboard:
+```
+https://github.com/motalim-ai/motion-starter-kit
+اشرح لي كيف تعمل الخلية الشمسية في 30 ثانية، بستايل whiteboard الموجود في الريبو.
+```
+
 ولحكاية بشخصيات كرتونية، بستايل doodle:
 ```
 https://github.com/motalim-ai/motion-starter-kit
