@@ -22,6 +22,12 @@ https://github.com/motalim-ai/motion-starter-kit
 أريد فيديو مدته 30 ثانية عن فوائد شرب الماء، بستايل plotter الموجود في الريبو.
 ```
 
+أو لحكاية بشخصيات كرتونية:
+```
+https://github.com/motalim-ai/motion-starter-kit
+أريد ريل مدته دقيقة يحكي قصة قصيرة عن الأمانة، بستايل doodle الموجود في الريبو.
+```
+
 بعدها يتولّى الوكيل الباقي:
 1. ينسخ الريبو، ويجهّز الأدوات (ويستأذنك إن احتاج أن يثبّت شيئًا).
 2. يحلّل فيديو الستايل بنفسه، ويكتب دليل أسلوبه في `STYLE.md`.
@@ -34,10 +40,12 @@ https://github.com/motalim-ai/motion-starter-kit
 القواعد واحدة لكل الوكلاء. لذلك يمكنك إعطاء نفس الرابط ونفس الطلب لأكثر من وكيل، ومقارنة ما يصنعه كل واحد.
 
 ## الستايلات
-| الاسم | المعاينة |
-|---|---|
-| `plotter` | <img src="styles/plotter/preview.jpg" width="480"> |
-| `doodle` | <img src="styles/doodle/preview.jpg" width="480"> |
+في الريبو ستايلان جاهزان. اذكر اسم أحدهما في طلبك:
+
+| الاسم | المعاينة | يناسب |
+|---|---|---|
+| `plotter` | <img src="styles/plotter/preview.jpg" width="400"> | شرح فكرة أو موضوع تقني: قلم يرسم على ورق مربعات، وكلمات تضيء مع الصوت. عرضي 16:9. |
+| `doodle` | <img src="styles/doodle/preview.jpg" width="400"> | حكاية أو قصة: شخصيات كرتونية مرسومة بالحبر تمشي وتتكلم في عالم واحد بلا قطع. طولي 9:16 للريلز. |
 
 التفاصيل، وطريقة إضافة ستايل جديد، في [styles/README.md](styles/README.md).
 
@@ -61,7 +69,7 @@ https://github.com/motalim-ai/motion-starter-kit
 | **Codex** | `AGENTS.md`، والسكيل من `.agents/skills/` |
 | **Antigravity** | `AGENTS.md` و`GEMINI.md`، والسكيل من `.agents/skills/` |
 
-وإن فتحت المشروع بعد نسخه، فيكفي أن تقول: «أريد فيديو عن ... بستايل plotter». وللمزيد من الأمثلة: [PROMPT.md](PROMPT.md).
+وإن فتحت المشروع بعد نسخه، فيكفي أن تقول: «أريد فيديو عن ... بستايل plotter» أو «... بستايل doodle». وللمزيد من الأمثلة: [PROMPT.md](PROMPT.md).
 
 ## خريطة المشروع
 ```
