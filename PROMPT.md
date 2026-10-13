@@ -26,6 +26,12 @@ https://github.com/motalim-ai/motion-starter-kit
 اشرح لي كيف تعمل الخلية الشمسية في 30 ثانية، بستايل whiteboard الموجود في الريبو.
 ```
 
+ولدرس رياضيات على سبورة خضراء، بستايل chalkboard:
+```
+https://github.com/motalim-ai/motion-starter-kit
+اشرح لي مساحة الدائرة بإثبات بصري، بستايل chalkboard الموجود في الريبو.
+```
+
 ولحكاية بشخصيات كرتونية، بستايل doodle:
 ```
 https://github.com/motalim-ai/motion-starter-kit
