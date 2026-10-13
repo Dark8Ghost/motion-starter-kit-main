@@ -44,6 +44,12 @@ https://github.com/motalim-ai/motion-starter-kit
 اشرح لي في 30 ثانية رحلة الرسالة من هاتفي إلى هاتف صديقي، بستايل isometric الموجود في الريبو.
 ```
 
+ولفكرة ملهمة في لقطة واحدة بلا قطع، بستايل fake3d:
+```
+https://github.com/motalim-ai/motion-starter-kit
+أريد فيديو مدته 20 ثانية عن «الوقت»: ساعة جيب تنتقل بين المشاهد وتنتهي ببوستر، بستايل fake3d الموجود في الريبو.
+```
+
 ولحكاية بشخصيات كرتونية، بستايل doodle:
 ```
 https://github.com/motalim-ai/motion-starter-kit
