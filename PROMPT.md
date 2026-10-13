@@ -50,6 +50,12 @@ https://github.com/motalim-ai/motion-starter-kit
 أريد فيديو مدته 20 ثانية عن «الوقت»: ساعة جيب تنتقل بين المشاهد وتنتهي ببوستر، بستايل fake3d الموجود في الريبو.
 ```
 
+ولإحصائية أو أرقام بأسلوب عروض Apple، بستايل infographic:
+```
+https://github.com/motalim-ai/motion-starter-kit
+اعرض لي في 25 ثانية كم يقضي الناس من يومهم على الهاتف، بأرقام حقيقية ومصدرها، بستايل infographic الموجود في الريبو.
+```
+
 ولحكاية بشخصيات كرتونية، بستايل doodle:
 ```
 https://github.com/motalim-ai/motion-starter-kit

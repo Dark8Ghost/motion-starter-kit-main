@@ -40,7 +40,7 @@ https://github.com/motalim-ai/motion-starter-kit
 القواعد واحدة لكل الوكلاء. لذلك يمكنك إعطاء نفس الرابط ونفس الطلب لأكثر من وكيل، ومقارنة ما يصنعه كل واحد.
 
 ## الستايلات
-في الريبو سبعة ستايلات جاهزة. اذكر اسم أحدها في طلبك:
+في الريبو ثمانية ستايلات جاهزة. اذكر اسم أحدها في طلبك:
 
 | الاسم | المعاينة | يناسب |
 |---|---|---|
@@ -51,6 +51,7 @@ https://github.com/motalim-ai/motion-starter-kit
 | `stickman` | <img src="styles/stickman/preview.jpg" width="400"> | فكرة أو نصيحة بقصة كوميدية: شخصية عصوية مرنة بوجه معبّر، ومواقف ومؤثرات. عرضي 16:9. |
 | `isometric` | <img src="styles/isometric/preview.jpg" width="400"> | شرح رحلة أو نظام من عدة مراحل: عالم أيزومتريك ملوّن بمناطق مختلفة، والكاميرا تتبع ما يتحرك بينها. عرضي 16:9. |
 | `fake3d` | <img src="styles/fake3d/preview.jpg" width="400"> | فكرة ملهمة أو افتتاحية فنية: أشياء مسطّحة تلف بعمق ثلاثي الأبعاد، في لقطة واحدة تنتقل بين المشاهد بلا قطع. عرضي 16:9. |
+| `infographic` | <img src="styles/infographic/preview.jpg" width="400"> | أرقام وإحصاءات بأسلوب عروض Apple: خلفية سوداء، وأرقام ضخمة تدور كالعدّاد، ورسوم تتحول من شكل لآخر. عرضي 16:9. |
 
 التفاصيل، وطريقة إضافة ستايل جديد، في [styles/README.md](styles/README.md).
 
@@ -74,7 +75,7 @@ https://github.com/motalim-ai/motion-starter-kit
 | **Codex** | `AGENTS.md`، والسكيل من `.agents/skills/` |
 | **Antigravity** | `AGENTS.md` و`GEMINI.md`، والسكيل من `.agents/skills/` |
 
-وإن فتحت المشروع بعد نسخه، فيكفي أن تقول: «أريد فيديو عن ... بستايل plotter»، أو «... بستايل doodle»، أو «... بستايل whiteboard»، أو «... بستايل chalkboard»، أو «... بستايل stickman»، أو «... بستايل isometric»، أو «... بستايل fake3d». وللمزيد من الأمثلة: [PROMPT.md](PROMPT.md).
+وإن فتحت المشروع بعد نسخه، فيكفي أن تقول: «أريد فيديو عن ... بستايل plotter»، أو «... بستايل doodle»، أو «... بستايل whiteboard»، أو «... بستايل chalkboard»، أو «... بستايل stickman»، أو «... بستايل isometric»، أو «... بستايل fake3d»، أو «... بستايل infographic». وللمزيد من الأمثلة: [PROMPT.md](PROMPT.md).
 
 ## خريطة المشروع
 ```
