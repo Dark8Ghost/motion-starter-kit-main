@@ -37,6 +37,7 @@ https://github.com/motalim-ai/motion-starter-kit
 | الاسم | المعاينة |
 |---|---|
 | `plotter` | <img src="styles/plotter/preview.jpg" width="480"> |
+| `doodle` | <img src="styles/doodle/preview.jpg" width="480"> |
 
 التفاصيل، وطريقة إضافة ستايل جديد، في [styles/README.md](styles/README.md).
 
