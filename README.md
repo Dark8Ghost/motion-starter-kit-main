@@ -40,7 +40,7 @@ https://github.com/motalim-ai/motion-starter-kit
 القواعد واحدة لكل الوكلاء. لذلك يمكنك إعطاء نفس الرابط ونفس الطلب لأكثر من وكيل، ومقارنة ما يصنعه كل واحد.
 
 ## الستايلات
-في الريبو أربعة ستايلات جاهزة. اذكر اسم أحدها في طلبك:
+في الريبو خمسة ستايلات جاهزة. اذكر اسم أحدها في طلبك:
 
 | الاسم | المعاينة | يناسب |
 |---|---|---|
@@ -48,6 +48,7 @@ https://github.com/motalim-ai/motion-starter-kit
 | `doodle` | <img src="styles/doodle/preview.jpg" width="400"> | حكاية أو قصة: شخصيات كرتونية مرسومة بالحبر تمشي وتتكلم في عالم واحد بلا قطع. طولي 9:16 للريلز. |
 | `whiteboard` | <img src="styles/whiteboard/preview.jpg" width="400"> | درس أو شرح خطوة بخطوة: ماركر يرسم على سبورة بيضاء، ويلوّن، والكاميرا تقترب من كل جزء. عرضي 16:9. |
 | `chalkboard` | <img src="styles/chalkboard/preview.jpg" width="400"> | درس رياضيات أو علوم: طباشيرة ترسم على سبورة خضراء، مع إثبات بصري متحرك. عرضي 16:9. |
+| `stickman` | <img src="styles/stickman/preview.jpg" width="400"> | فكرة أو نصيحة بقصة كوميدية: شخصية عصوية مرنة بوجه معبّر، ومواقف ومؤثرات. عرضي 16:9. |
 
 التفاصيل، وطريقة إضافة ستايل جديد، في [styles/README.md](styles/README.md).
 
@@ -71,7 +72,7 @@ https://github.com/motalim-ai/motion-starter-kit
 | **Codex** | `AGENTS.md`، والسكيل من `.agents/skills/` |
 | **Antigravity** | `AGENTS.md` و`GEMINI.md`، والسكيل من `.agents/skills/` |
 
-وإن فتحت المشروع بعد نسخه، فيكفي أن تقول: «أريد فيديو عن ... بستايل plotter»، أو «... بستايل doodle»، أو «... بستايل whiteboard»، أو «... بستايل chalkboard». وللمزيد من الأمثلة: [PROMPT.md](PROMPT.md).
+وإن فتحت المشروع بعد نسخه، فيكفي أن تقول: «أريد فيديو عن ... بستايل plotter»، أو «... بستايل doodle»، أو «... بستايل whiteboard»، أو «... بستايل chalkboard»، أو «... بستايل stickman». وللمزيد من الأمثلة: [PROMPT.md](PROMPT.md).
 
 ## خريطة المشروع
 ```
