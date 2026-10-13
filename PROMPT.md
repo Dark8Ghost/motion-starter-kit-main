@@ -38,6 +38,12 @@ https://github.com/motalim-ai/motion-starter-kit
 أريد فيديو مدته 25 ثانية عن أهمية النوم مبكرًا، في قصة كوميدية بستايل stickman الموجود في الريبو.
 ```
 
+ولشرح رحلة أو نظام من عدة مراحل، بستايل isometric:
+```
+https://github.com/motalim-ai/motion-starter-kit
+اشرح لي في 30 ثانية رحلة الرسالة من هاتفي إلى هاتف صديقي، بستايل isometric الموجود في الريبو.
+```
+
 ولحكاية بشخصيات كرتونية، بستايل doodle:
 ```
 https://github.com/motalim-ai/motion-starter-kit
