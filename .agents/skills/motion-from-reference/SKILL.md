@@ -1,6 +1,6 @@
 ---
 name: motion-from-reference
-description: Build a new motion-graphics video in Remotion in the style of a reference video. Use when the user names a style from the styles/ library (e.g. "plotter", "doodle", "whiteboard", "chalkboard" or "stickman") or puts a video in reference/, and asks for a new video, animation, explainer or motion graphics in that style («اصنع فيديو بنفس الستايل»). Covers studying the reference, one round of questions, script and voice timing, building scenes, review in Remotion Studio, and rendering only after the user approves.
+description: Build a new motion-graphics video in Remotion in the style of a reference video. Use when the user names a style from the styles/ library (e.g. "plotter", "doodle", "whiteboard", "chalkboard", "stickman" or "isometric") or puts a video in reference/, and asks for a new video, animation, explainer or motion graphics in that style («اصنع فيديو بنفس الستايل»). Covers studying the reference, one round of questions, script and voice timing, building scenes, review in Remotion Studio, and rendering only after the user approves.
 ---
 
 <div dir="rtl">
