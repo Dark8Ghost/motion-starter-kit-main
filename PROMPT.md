@@ -62,6 +62,12 @@ https://github.com/motalim-ai/motion-starter-kit
 احكِ لي رحلة طارق بن زياد من طنجة إلى الأندلس في 30 ثانية، بستايل map-journey الموجود في الريبو.
 ```
 
+ولإعلان منتج أو تطبيق بأسلوب شركات التقنية، بستايل product:
+```
+https://github.com/motalim-ai/motion-starter-kit
+أريد إعلانًا مدته 30 ثانية لتطبيق يذكّرني بشرب الماء، بستايل product الموجود في الريبو.
+```
+
 ولحكاية بشخصيات كرتونية، بستايل doodle:
 ```
 https://github.com/motalim-ai/motion-starter-kit
