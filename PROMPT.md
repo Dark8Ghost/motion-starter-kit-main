@@ -56,6 +56,12 @@ https://github.com/motalim-ai/motion-starter-kit
 اعرض لي في 25 ثانية كم يقضي الناس من يومهم على الهاتف، بأرقام حقيقية ومصدرها، بستايل infographic الموجود في الريبو.
 ```
 
+ولرحلة أو حدث تاريخي على الخريطة، بستايل map-journey:
+```
+https://github.com/motalim-ai/motion-starter-kit
+احكِ لي رحلة طارق بن زياد من طنجة إلى الأندلس في 30 ثانية، بستايل map-journey الموجود في الريبو.
+```
+
 ولحكاية بشخصيات كرتونية، بستايل doodle:
 ```
 https://github.com/motalim-ai/motion-starter-kit
